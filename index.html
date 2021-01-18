@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Дипломная работа</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href = "css/Styles.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="js/jquery-3.4.1.min.js" defer></script>
+	<script src="js/jquery.maskedinput.min.js" defer></script>
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<header class="header">
+		<div class="container header__fixcontainer">
+			<nav class="header__nav nav">
+				<button class="nav__open-menu js-menuBtn"></button>
+				<ul class="nav__list header-list js-headerLinks">
+					<li class="header-list__item"><a href="#services" class="header-list__link scrollto-1">Услуги</a></li>
+					<li class="header-list__item"><a href="#portfolio" class="header-list__link scrollto-2">Портфолио</a></li>
+					<li class="header-list__item js-costLink"><a href="#cost" class="header-list__link scrollto-3">Стоимость</a></li>
+				</ul>
+			</nav>
+			<div class="header__contacts contacts">
+				<a class='contacts__tel-header links' href="tel:+7(499)995-77-55">+7 (499) 995-55-77</a>
+				<button class='contacts__button-header js-headCommBtn buttons'>Заказать звонок</button>
+				<a href="#" class="contacts__icon-header links js-phoneIcon"><i class="fa fa-phone"></i></a>
+			</div>
+		</div>
+	</header>
+	<section class="about">
+		<div class="container about__fixcontainer">
+			<div class="about__text">
+				<h1 class="about__title">Дмитрий Алексеев</h1>
+				<span class="about__subtitle">Frontend-разработчик и веб-верстальщик</span>
+				<button class="about__button buttons js-aboutBtn">Узнать больше</button>
+			</div>
+			<picture class="about__picture-man">
+				<source srcset="img/about-man-mob.png" media="(max-width:375px)">
+				<img src="img/about-man.png" alt="man" class="about__man-img">
+			</picture>
+			<span class='about__teg-1'></span>
+			<span class='about__teg-2'></span>
+			<span class='about__teg-3'></span>
+			<span class='about__teg-4'></span>
+			<span class='about__teg-5'></span>
+		</div>
+		<picture class="about__picture-ellipse">
+			 <source srcset="img/ellipse_mob.png" media="(max-width:375px)">
+				<source srcset="img/ellipse_1024.png" media="(max-width:1024px)">
+					<source srcset="img/ellipse.svg" media="(max-width:1366px)">
+			<img src="img/ellipse.svg" alt="ellipse" class="about__ellipse-img">
+		</picture>
+	</section>
+	<section class="features">
+		<div class="container features__fixcontainer">
+				<h2 class="features__title">Что я делаю</h2>
+				<a href="#" class="visually-hidden" name="cost"></a>
+					<ul class="features__list">
+						<li class="features__item item-content">
+							 <img class="item-content__img img_1" src="img/icons_1.jpg" alt="img">
+							 <span class="item-content__subtitle">Вёрстка лэндинг-страниц и&nbsp;сайтов любой сложности</span> 
+						</li>
+						<li class="features__item item-content">
+							<img class="item-content__img img_2" src="img/icons_2.jpg" alt="img">
+							<span class="item-content__subtitle">Адаптивная вёрстка под&nbsp;все браузеры и устройства</span>
+						</li>
+						<li class="features__item item-content">
+							<img class="item-content__img img_3" src="img/icons_3.jpg" alt="img">
+							<span class="item-content__subtitle subtitle_3">Frontend-разработка и&nbsp;программирование</span>
+						</li>
+						<li class="features__item item-content">
+								<img class="item-content__img img_4" src="img/icons_4.jpg" alt="img">
+								<span class="item-content__subtitle">Исправление и доработка существующей вёрстки</span>
+						</li>
+					</ul>
+			<button class="features__btn js-costbtn buttons">Узнать стоимость</button>
+		</div>
+	</section>
+
+	<div class="slider slider-head">
+		 <div class="container slider-head__fixcontainer">
+			<h2 class="slider-head__title">Примеры моих работ</h2>
+			<a href="#" name="portfolio" class="visually-hidden"></a>
+				<div class="slider-head__navigate navigate-buttons">
+					<button class="swiper-button-prev swiper__button-prev"></button>
+					<button class="swiper-button-next swiper__button-next"></button>
+				</div>
+		</div> 
+		<div class="container slider-body__fixcontainer swiper-container swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide card"><img src="img/img_1.jpg" class="swiper-img" alt="img">
+					<span class="card__subtitle">Сайт психолога Веры Антоновой</span>
+				</div>
+				<div class="swiper-slide card"><img src="img/img_2.jpg" class="swiper-img" alt="img">
+					<span class="card__subtitle">Интернет-магазин детской одежды</span>
+				</div>
+				<div class="swiper-slide card"><img src="img/img_3.jpg" alt="img" class="swiper-img">
+					<span class="card__subtitle">Сайт магазина
+					&laquo;Рыболов&raquo;</span></div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		 <button class="slider__btn js-order-btn buttons">Заказать проект</button>
+	</div>
+	<section class="advertising">
+		<div class="container advertising__fixcontainer">
+			<h2 class="advertising__heading">Адаптивная вёрстка под все устройства
+				и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
+				<a href="#" name ="services" class="visually-hidden"></a>
+			<p class="advertising__desc"> Срок и стоимость могут отличаться от заявленных и рассчитываются 
+				индивидуально,
+				в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.</p>
+		</div>
+			<span class='advertising__teg-1'></span>
+			<span class='advertising__teg-2'></span>
+			<span class='advertising__teg-3'></span>
+			<span class='advertising__teg-4'></span>
+			<span class='advertising__teg-5'></span>
+	</section>
+	<section class="modal-wrapper js-modal hide">
+			<div class="modal-order__content js-orderModal hide">
+				<div class="modal-order__head head">
+					<h2 class="head__title">Заказать проект</h2>
+					<span class="head__close close-modal js-orderModalClose"></span>
+				</div>
+					<form class="modal__body order-form" id="order-form" autocomplete="off">
+						<label for="input-order-name" class="order-form__label">Имя</label>
+						<input type="text" class="order-form__input-name inputs" id="input-order-name" required minlength="2"  placeholder="Ваше имя">
+						<label for="input-order-tel" class="order-form__label">Телефон</label>
+						<input type="tel" class="order-form__input-tel inputs" id="input-order-tel" required title="Номер должен содержать 11 цифр" placeholder="+7 (___) ___ __ __">
+						<label for="input-order-file" class="order-form__label">Дизайн макет <i><small>(если имеется)</small></i>
+						</label>
+						<input type="file" class="order-form__input-file" id="input-order-file">
+						<button class="order-form__button buttons forms-buttons">
+							Отправить заявку
+						</button>
+					</form>
+			</div>
+			<div class="modal-communicate__content hide js-commModal">
+				<div class="modal-communicate__head head">
+					<h2 class="head__title">Форма связи</h2>
+					<span class="head__close close-modal js-commModalClose"></span>
+				</div>
+				<form class="modal-communicate__body comm-form" autocomplete="off">
+					<label for="input-comm-name" class="comm-form__label">Имя</label>
+					<input type="text" class="comm-form__input-name inputs" id="input-comm-name" required placeholder="Ваше имя" minlength="2">
+					<label for="input-comm-tel" class="comm-form__label">Телефон</label>
+					<input type="tel" class="comm-form__input-tel inputs" id="input-comm-tel" placeholder="+7 (___) ___ __ __" required>
+					<label for="input-comm-mail" class="comm-form__label">Почта</label>
+					<input type="email" class="comm-form__input-mail inputs" id="input-comm-mail" placeholder="example@.com">
+					<label for="input-comm-textarea" class="comm-form__label">Комментарии</label>
+					<textarea id="input-comm-textarea"  class="comm-form__textarea" placeholder="Пример: Позвонить после 17-00"></textarea>
+					<button class="comm-form__button buttons forms-buttons">
+						Отправить заявку
+					</button>
+				</form>
+			</div>
+			<div class="modal-cost__content hide content-aside js-costModal">
+				<div class="content-aside__price price-lists js-listsTitle">
+					<span class="content-aside__close close-modal-mob  js-costModalCloseMob"></span>
+					<div class="price-lists__list list">
+						<h2 class="list__title">Комбо</h2>
+						<ul class="list__items js-costLists">
+							<li class="list__item">Сделаю за 1 день</li>
+							<li class="list__item">Поддержка сайта 100 лет</li>
+							<li class="list__item">Нож-кредитка в подарок</li>
+							<li class="list__item">от 999 руб.</li>
+						</ul>
+					</div>
+					<div class="price-lists__list list">
+						<h2 class="list__title">Средний</h2>
+							<ul class="list__items js-costLists">
+								<li class="list__item">Сделаю за 7 день</li>
+								<li class="list__item">Поддержка сайта 50 лет</li>
+								<li class="list__item">Английский словарь в подарок</li>
+								<li class="list__item">от 499 руб.</li>
+							</ul>
+					</div>
+					<div class="price-lists__list list">
+						<h2 class="list__title">Стандарт</h2>
+						<ul class="list__items js-costLists">
+							<li class="list__item">Сделаю за 365 дней</li>
+							<li class="list__item">Нет поддержки сайта</li>
+							<li class="list__item">Ссылка на сайт в подарок</li>
+							<li class="list__item">0 руб.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-aside__cost">
+					<div class="content-aside__cost__head head">
+						<h2 class="head__title">Форма связи</h2>
+						<span class="head__close close-modal js-costModalClose"></span>
+					</div>
+					<form class="content-aside__cost__body cost-form" autocomplete="off">
+						<label for="input-cost-name" class="cost-form__label">Имя</label>
+						<input type="text" class="cost-form__input-name inputs" id="input-cost-name" required placeholder="Ваше имя" minlength="2">
+						<label for="input-cost-tel" class="cost-form__label">Телефон</label>
+						<input type="tel" class="cost-form__input-tel inputs" id="input-cost-tel" placeholder="+7 (___) ___ __ __" required>
+						<label for="input-cost-mail" class="cost-form__label">Почта</label>
+						<input type="email" class="cost-form__input-mail inputs" id="input-cost-mail" placeholder="example@.com">
+						<label for="input-cost-textarea" class="cost-form__label">Комментарии</label>
+						<textarea id="input-cost-textarea" class="cost-form__textarea" placeholder="Пример: Позвонить после 17-00"></textarea>
+						<button class="cost-form__button buttons forms-buttons">
+							Отправить заявку
+						</button>
+					</form>
+					</div>
+				</div>
+				<div class="modal-about__content hide js-aboutModal">
+				<div class="modal-about__head head">
+					<h2 class="head__title">Обо Мне</h2>
+					<span class="head__close close-modal js-aboutModalClose"></span>
+				</div>
+				<div class="modal-about__body about-body">
+					<p class="about-body__paragraph">Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже.</p>
+					<p class="about-body__paragraph">Также даны разделы 1.10.32 и 1.10.33 "de Finibus</p>
+					<p class="about-body__paragraph">Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+
+					<p class="about-body__paragraph">Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+					<p class="about-body__paragraph">Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+					<p class="about-body__paragraph">Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+				</div>
+			</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer__fixcontainer">
+			<nav class="footer__nav nav">
+				<ul class="nav__list footer-list">
+					<li class="footer-list__item"><a href="#services" class="footer-list__link links scrollto-1">Услуги</a></li>
+					<li class="footer-list__item"><a href="#portfolio" class="footer-list__link links scrollto-2">Портфолио</a></li>
+					<li class="footer-list__item"><a href="#cost" class="footer-list__link links scrollto-3">Стоимость</a></li>
+				</ul>
+			</nav>
+			<div class="footer__contacts contacts">
+				<a href="tel:+7(499)995-77-55" class="contacts__link links"><i class="fa fa-phone contacts__phone" aria-hidden="true"></i><span class='contacts__tel'>+7 (499) 995-77-55</span></a>
+				<a href="mailto:dmitry@alekseev.com" class="contacts__link links"><i class="fa fa-envelope contacts__envelope"></i><span class="contacts__mail">dmitry@alekseev.com</span></a>
+			</div>
+			<div class="footer__communicate-icons communicate">
+				<button class="footer__btn js-footCommBtn buttons">Заказать звонок</button>
+				<ul class="communicate__items sprites__items">
+					<li class="sprite-item">
+						<a class="sprite sprite-vk_icon links" href="https://www.vk.com" target="_blank"></a>
+					</li>
+					<li class="sprite-item">
+						<a class="sprite sprite-fb_icon links" href="https://www.facebook.com" target="_blank"></a>
+					</li>
+					<li class="sprite-item">
+						<a class="sprite sprite-tw_icon links" href="https://twitter.com" target="_blank"></a>
+					</li>
+					<li class="sprite-item">
+						<a class="sprite sprite-inst_icon links" href="https://www.instagram.com" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<div class="bottom">
+		<span class="copyright">© Дмитрий Алексеев, 2016 - 2018</span>
+	</div>
+		<script src="js/modal-mob.js" defer></script>
+		<script src="js/inputMask.js" defer></script>
+		<script src="js/scrollTo.js" defer></script>
+		<script src="js/disabledScroll.js" defer></script>
+		<script src="js/modal.js" defer></script>
+		<script src="js/flyTags.js" defer></script>
+		<script src="js/hiddenMenu.js" defer></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+		<script src="js/slider.js" defer></script>
+				</body>
+				</html>
