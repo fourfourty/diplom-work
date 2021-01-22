@@ -635,7 +635,6 @@ body {
 }
 
 .modal-order__content {
-  /* min-width: 320px; */
   background-color: #ff547e;
   border: 1px solid #ff547e;
   opacity: 0.9;
@@ -655,6 +654,8 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 20px;
+  position: relative;
+  min-width: 250px;
 }
 
 .head__title {
@@ -698,6 +699,62 @@ body {
   outline: none;
   border: 1px solid transparent;
   border-radius: 5px;
+}
+
+.file-label {
+  width: 50%;
+  background-color: #fc557c;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  transition: all 0.18s ease-in-out;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 12px;
+  border: 1px solid white;
+}
+
+.file-label:hover .icon-file {
+  fill: black;
+}
+.file-label:hover {
+  color: black;
+  border-color: black;
+  background-color: white;
+}
+
+#input-order-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#input-order-file:focus {
+  outline: 1px dotted tomato;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+#input-order-file + .file-label {
+  pointer-events: none;
+}
+
+#input-order-file:focus + .file-label,
+#input-order-file.has-focus + .file-label {
+  outline: 1px dotted tomato;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.icon-file {
+  fill: white;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  transition: all 0.18s ease-in-out;
 }
 
 .forms-buttons {
@@ -767,6 +824,15 @@ body {
   outline: none;
   border: 1px solid transparent;
   border-radius: 5px;
+}
+
+.comm-form__input-name:required:valid,
+.order-form__input-name:required:valid,
+.comm-form__input-mail:required:valid {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right;
 }
 
 .comm-form__textarea {
