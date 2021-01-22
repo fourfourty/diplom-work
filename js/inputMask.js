@@ -1,8 +1,3 @@
-// const inputsTel = $('input[type="tel"]');
-      
-// inputsTel.each(function(){
-//   $(this).mask("+7(999)999-99-99");
-// });
 
 (function( $ ){
 	
@@ -21,9 +16,21 @@
       let phoneVal = phone.val();
       let form = $(this).parents('form');
 
+      if (phoneVal == '') {
+        phone.css('background-image', 'none');
+      }
+      if (phoneVal != '') {
+        phone.css({
+        'background-image': 'url(img/tick.svg)',
+        'background-size': '20px',
+        'background-position': 'right',
+        'background-repeat': 'no-repeat',
+      })
+    }
       if ( (phoneVal.indexOf("_") != -1) || phoneVal == '' ) {
         form.find('.forms-buttons').attr('disabled',true);
-      } else {
+      } 
+      else {
         form.find('.forms-buttons').removeAttr('disabled');
       }
     });
@@ -31,3 +38,4 @@
   });
 
 })( jQuery );
+
