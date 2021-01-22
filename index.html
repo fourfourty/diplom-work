@@ -134,12 +134,16 @@
 				</div>
 					<form class="modal__body order-form" id="order-form" autocomplete="off">
 						<label for="input-order-name" class="order-form__label">Имя</label>
-						<input type="text" class="order-form__input-name inputs" id="input-order-name" required minlength="2"  placeholder="Ваше имя">
+						<input type="text" class="order-form__input-name inputs" id="input-order-name"   placeholder="Ваше имя"  minlength="2" maxlength="15" required>
 						<label for="input-order-tel" class="order-form__label">Телефон</label>
-						<input type="tel" class="order-form__input-tel inputs" id="input-order-tel" required title="Номер должен содержать 11 цифр" placeholder="+7 (___) ___ __ __">
-						<label for="input-order-file" class="order-form__label">Дизайн макет <i><small>(если имеется)</small></i>
+						<input type="tel" class="order-form__input-tel inputs" id="input-order-tel" required title="Номер должен содержать 11 цифр" placeholder="Ваш номер телефона" optional>
+						<label for="input-order-file" class="order-form__label file-label"> 
+							<svg class="icon icon-file">
+								<use xlink:href="img/icons/icons.svg#file"></use>
+							</svg>
+							<strong>Дизайн макет</strong>
 						</label>
-						<input type="file" class="order-form__input-file" id="input-order-file">
+						<input type="file" class="order-form__input-file js-file" id="input-order-file" multiple>
 						<button class="order-form__button buttons forms-buttons">
 							Отправить заявку
 						</button>
@@ -152,11 +156,11 @@
 				</div>
 				<form class="modal-communicate__body comm-form" autocomplete="off">
 					<label for="input-comm-name" class="comm-form__label">Имя</label>
-					<input type="text" class="comm-form__input-name inputs" id="input-comm-name" required placeholder="Ваше имя" minlength="2">
+					<input type="text" class="comm-form__input-name inputs" id="input-comm-name" required placeholder="Ваше имя" minlength="2" maxlength="15" required>
 					<label for="input-comm-tel" class="comm-form__label">Телефон</label>
-					<input type="tel" class="comm-form__input-tel inputs" id="input-comm-tel" placeholder="+7 (___) ___ __ __" required>
+					<input type="tel" class="comm-form__input-tel inputs" id="input-comm-tel" placeholder="Ваш номер телефона" optional>
 					<label for="input-comm-mail" class="comm-form__label">Почта</label>
-					<input type="email" class="comm-form__input-mail inputs" id="input-comm-mail" placeholder="example@.com">
+					<input type="email" class="comm-form__input-mail inputs" id="input-comm-mail" placeholder="example@.com" maxLength="50" required>
 					<label for="input-comm-textarea" class="comm-form__label">Комментарии</label>
 					<textarea id="input-comm-textarea"  class="comm-form__textarea" placeholder="Пример: Позвонить после 17-00"></textarea>
 					<button class="comm-form__button buttons forms-buttons">
@@ -201,15 +205,17 @@
 						<span class="head__close close-modal js-costModalClose"></span>
 					</div>
 					<form class="content-aside__cost__body cost-form" autocomplete="off">
-						<label for="input-cost-name" class="cost-form__label">Имя</label>
-						<input type="text" class="cost-form__input-name inputs" id="input-cost-name" required placeholder="Ваше имя" minlength="2">
-						<label for="input-cost-tel" class="cost-form__label">Телефон</label>
-						<input type="tel" class="cost-form__input-tel inputs" id="input-cost-tel" placeholder="+7 (___) ___ __ __" required>
-						<label for="input-cost-mail" class="cost-form__label">Почта</label>
-						<input type="email" class="cost-form__input-mail inputs" id="input-cost-mail" placeholder="example@.com">
-						<label for="input-cost-textarea" class="cost-form__label">Комментарии</label>
-						<textarea id="input-cost-textarea" class="cost-form__textarea" placeholder="Пример: Позвонить после 17-00"></textarea>
-						<button class="cost-form__button buttons forms-buttons">
+						<label for="input-comm-name" class="comm-form__label">Имя</label>
+						<input type="text" class="comm-form__input-name inputs" id="input-comm-name" required placeholder="Ваше имя"
+							minlength="2" maxlength="15" required>
+						<label for="input-comm-tel" class="comm-form__label">Телефон</label>
+						<input type="tel" class="comm-form__input-tel inputs" id="input-comm-tel" placeholder="Ваш номер телефона" optional>
+						<label for="input-comm-mail" class="comm-form__label">Почта</label>
+						<input type="email" class="comm-form__input-mail inputs" id="input-comm-mail" placeholder="example@.com" maxLength="50"
+							required>
+						<label for="input-comm-textarea" class="comm-form__label">Комментарии</label>
+						<textarea id="input-comm-textarea" class="comm-form__textarea" placeholder="Пример: Позвонить после 17-00"></textarea>
+						<button class="comm-form__button buttons forms-buttons">
 							Отправить заявку
 						</button>
 					</form>
@@ -267,6 +273,7 @@
 	<div class="bottom">
 		<span class="copyright">© Дмитрий Алексеев, 2016 - 2018</span>
 	</div>
+		<script src="js/custom-inp-file.js" defer></script>
 		<script src="js/modal-mob.js" defer></script>
 		<script src="js/inputMask.js" defer></script>
 		<script src="js/scrollTo.js" defer></script>
