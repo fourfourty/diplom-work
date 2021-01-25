@@ -40,7 +40,7 @@
     transition: transform 1s ease;
     opacity: 0.9;
     background-color: #ff547e;
-    border: 1px solid #ff547e;
+    border: 1px solid transparent;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
   }
@@ -443,7 +443,7 @@
     font-size: 40px;
   }
   .swiper-container {
-    min-width: none;
+    min-width: auto;
   }
   .swiper-wrapper {
     padding-top: 40px;
