@@ -9,7 +9,7 @@ $(function(){
       menuElem.classList.toggle('menu-transform');
       btnMenu.classList.toggle('nav__close-menu');
     }
-      $('html,body').stop().animate({ scrollTop: $('[name="services"]').offset().top }, 1500);
+      $('html,body').stop().animate({ scrollTop: $('[id="services"]').offset().top }, 1500);
       e.preventDefault();
   });
   $('.scrollto-2').on('click', function(e){
@@ -18,7 +18,7 @@ $(function(){
       menuElem.classList.toggle('menu-transform');
       btnMenu.classList.toggle('nav__close-menu');
     }
-      $('html,body').stop().animate({ scrollTop: $('[name="portfolio"]').offset().top }, 1500);
+      $('html,body').stop().animate({ scrollTop: $('[id="portfolio"]').offset().top }, 1500);
       e.preventDefault();
 });
   $('.scrollto-3').on('click', function(e){
@@ -27,7 +27,7 @@ $(function(){
         menuElem.classList.toggle('menu-transform');
         btnMenu.classList.toggle('nav__close-menu');
     }
-        $('html,body').stop().animate({ scrollTop: $('[name="cost"]').offset().top }, 1500);
+        $('html,body').stop().animate({ scrollTop: $('[id="cost"]').offset().top }, 1500);
         e.preventDefault();
 });
 });
