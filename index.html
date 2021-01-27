@@ -30,8 +30,8 @@
 				</ul>
 			</nav>
 			<div class="header__contacts contacts">
-				<a class="contacts__tel-header links" href="tel:+7(499)995-77-55">+7 (499) 995-55-77</a>
-				<button class="contacts__button-header js-headCommBtn buttons">Заказать звонок</button>
+				<a class='contacts__tel-header links' href="tel:+7(499)995-77-55">+7 (499) 995-55-77</a>
+				<button class='contacts__button-header js-headCommBtn buttons'>Заказать звонок</button>
 				<a href="#" class="contacts__icon-header links js-phoneIcon"><i class="fa fa-phone"></i></a>
 			</div>
 		</div>
@@ -47,11 +47,11 @@
 				<source srcset="img/about-man-mob.png" media="(max-width:375px)">
 				<img src="img/about-man.png" alt="man" class="about__man-img">
 			</picture>
-			<span class="about__teg-1"></span>
-			<span class="about__teg-2"></span>
-			<span class="about__teg-3"></span>
-			<span class="about__teg-4"></span>
-			<span class="about__teg-5"></span>
+			<span class='about__teg-1'></span>
+			<span class='about__teg-2'></span>
+			<span class='about__teg-3'></span>
+			<span class='about__teg-4'></span>
+			<span class='about__teg-5'></span>
 		</div>
 		<picture class="about__picture-ellipse">
 			 <source srcset="img/ellipse_mob.png" media="(max-width:375px)">
@@ -63,7 +63,7 @@
 	<section class="features">
 		<div class="container features__fixcontainer">
 				<h2 class="features__title">Что я делаю</h2>
-				<a href="#" class="visually-hidden" id="cost"></a>
+				<a href="#" class="visually-hidden" id="services"></a>
 					<ul class="features__list">
 						<li class="features__item item-content">
 							 <img class="item-content__img img_1" src="img/icons_1.jpg" alt="img">
@@ -89,7 +89,7 @@
 	<div class="slider slider-head">
 		 <div class="container slider-head__fixcontainer">
 			<h2 class="slider-head__title">Примеры моих работ</h2>
-			<a href="#" id="portfolio" class="visually-hidden"></a>
+			<a href="#" name="portfolio" class="visually-hidden"></a>
 				<div class="slider-head__navigate navigate-buttons">
 					<button class="swiper-button-prev swiper__button-prev"></button>
 					<button class="swiper-button-next swiper__button-next"></button>
@@ -115,16 +115,16 @@
 		<div class="container advertising__fixcontainer">
 			<h2 class="advertising__heading">Адаптивная вёрстка под все устройства
 				и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
-				<a href="#" id ="services" class="visually-hidden"></a>
+				<a href="#" id ="cost" class="visually-hidden"></a>
 			<p class="advertising__desc"> Срок и стоимость могут отличаться от заявленных и рассчитываются 
 				индивидуально,
 				в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.</p>
 		</div>
-			<span class="advertising__teg-1"></span>
-			<span class="advertising__teg-2"></span>
-			<span class="advertising__teg-3"></span>
-			<span class="advertising__teg-4"></span>
-			<span class="advertising__teg-5"></span>
+			<span class='advertising__teg-1'></span>
+			<span class='advertising__teg-2'></span>
+			<span class='advertising__teg-3'></span>
+			<span class='advertising__teg-4'></span>
+			<span class='advertising__teg-5'></span>
 	</section>
 	<section class="modal-wrapper js-modal hide">
 			<div class="modal-order__content js-orderModal hide">
@@ -136,7 +136,7 @@
 						<label for="input-order-name" class="order-form__label">Имя</label>
 						<input type="text" class="order-form__input-name inputs" id="input-order-name"   placeholder="Ваше имя"  minlength="2" maxlength="15" required>
 						<label for="input-order-tel" class="order-form__label">Телефон</label>
-						<input type="tel" class="order-form__input-tel inputs" id="input-order-tel" required title="Номер должен содержать 11 цифр" placeholder="Ваш номер телефона">
+						<input type="tel" class="order-form__input-tel inputs" id="input-order-tel" required title="Номер должен содержать 11 цифр" placeholder="Ваш номер телефона" optional>
 						<label for="input-order-file" class="order-form__label file-label"> 
 							<svg class="icon icon-file">
 								<use xlink:href="img/icons/icons.svg#file"></use>
@@ -156,9 +156,9 @@
 				</div>
 				<form class="modal-communicate__body comm-form" autocomplete="off">
 					<label for="input-comm-name" class="comm-form__label">Имя</label>
-					<input type="text" class="comm-form__input-name inputs" id="input-comm-name" required placeholder="Ваше имя" minlength="2" maxlength="15">
+					<input type="text" class="comm-form__input-name inputs" id="input-comm-name" required placeholder="Ваше имя" minlength="2" maxlength="15" required>
 					<label for="input-comm-tel" class="comm-form__label">Телефон</label>
-					<input type="tel" class="comm-form__input-tel inputs" id="input-comm-tel" placeholder="Ваш номер телефона">
+					<input type="tel" class="comm-form__input-tel inputs" id="input-comm-tel" placeholder="Ваш номер телефона" optional>
 					<label for="input-comm-mail" class="comm-form__label">Почта</label>
 					<input type="email" class="comm-form__input-mail inputs" id="input-comm-mail" placeholder="example@.com" maxLength="50" required>
 					<label for="input-comm-textarea" class="comm-form__label">Комментарии</label>
@@ -205,14 +205,16 @@
 						<span class="head__close close-modal js-costModalClose"></span>
 					</div>
 					<form class="content-aside__cost__body cost-form" autocomplete="off">
-						<label for="input-cost-comm-name" class="comm-form__label">Имя</label>
-						<input type="text" class="comm-form__input-name inputs" id="input-cost-comm-name"  placeholder="Ваше имя" minlength="2" maxlength="15" required>
-						<label for="input-cost-comm-tel" class="comm-form__label">Телефон</label>
-						<input type="tel" class="comm-form__input-tel inputs" id="input-cost-comm-tel" placeholder="Ваш номер телефона">
-						<label for="input-cost-comm-mail" class="comm-form__label">Почта</label>
-						<input type="email" class="comm-form__input-mail inputs" id="input-cost-comm-mail" placeholder="example@.com" maxLength="50" required>
-						<label for="input-cost-comm-textarea" class="comm-form__label">Комментарии</label>
-						<textarea id="input-cost-comm-textarea" class="comm-form__textarea" placeholder="Пример: Позвонить после 17-00"></textarea>
+						<label for="input-comm-name" class="comm-form__label">Имя</label>
+						<input type="text" class="comm-form__input-name inputs" id="input-comm-name" required placeholder="Ваше имя"
+							minlength="2" maxlength="15" required>
+						<label for="input-comm-tel" class="comm-form__label">Телефон</label>
+						<input type="tel" class="comm-form__input-tel inputs" id="input-comm-tel" placeholder="Ваш номер телефона" optional>
+						<label for="input-comm-mail" class="comm-form__label">Почта</label>
+						<input type="email" class="comm-form__input-mail inputs" id="input-comm-mail" placeholder="example@.com" maxLength="50"
+							required>
+						<label for="input-comm-textarea" class="comm-form__label">Комментарии</label>
+						<textarea id="input-comm-textarea" class="comm-form__textarea" placeholder="Пример: Позвонить после 17-00"></textarea>
 						<button class="comm-form__button buttons forms-buttons">
 							Отправить заявку
 						</button>
@@ -246,7 +248,7 @@
 				</ul>
 			</nav>
 			<div class="footer__contacts contacts">
-				<a href="tel:+7(499)995-77-55" class="contacts__link links"><i class="fa fa-phone contacts__phone" aria-hidden="true"></i><span class="contacts__tel">+7 (499) 995-77-55</span></a>
+				<a href="tel:+7(499)995-77-55" class="contacts__link links"><i class="fa fa-phone contacts__phone" aria-hidden="true"></i><span class='contacts__tel'>+7 (499) 995-77-55</span></a>
 				<a href="mailto:dmitry@alekseev.com" class="contacts__link links"><i class="fa fa-envelope contacts__envelope"></i><span class="contacts__mail">dmitry@alekseev.com</span></a>
 			</div>
 			<div class="footer__communicate-icons communicate">
@@ -281,5 +283,5 @@
 		<script src="js/hiddenMenu.js" defer></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
 		<script src="js/slider.js" defer></script>
-</body>
-</html>
+				</body>
+				</html>
